@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #e3a15f;
+}
+
+/* Navigation */
+
+.navigation{
+    background-color: rgb(71, 37, 37);
+    height: 100px;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+    border-bottom: 2px solid rgb(96, 41, 41);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav div img{
+    height: 60px;
+    width: 80px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(83%) sepia(2%) saturate(922%) hue-rotate(314deg) brightness(84%) contrast(83%);
+}
+
+nav div p{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #d4a373;
+    transform: translateY(-3px);
+}
+
+/* image */
+
+#image{
+    position: relative;
+    width: 100%;
+    background-image: cover;
+}
+
+#image img{
+    height: 900px;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid rgb(96, 41, 41);
+}
+
+#image span{
+    position: absolute;
+    color: #e3a15f;
+    z-index: 50;
+    bottom: 500px;
+    left: 80px;
+    font-size: 70px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Menu */
+
+#menu img{
+    height: 700px;
+    width: 100%;
+    background-image: cover;
+    border-bottom: 2px solid rgb(96, 41, 41);
+    margin-bottom: 30px;
+}
+
+/* About */
+
+.line{
+    width: 700px;
+    height: 4px;
+    background-color: #5a470fac;
+    margin-bottom: 20px;
+}
+
+.abt-img{
+    padding: 20px 150px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.abt-img img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: cover;
+    border: 2px solid #46311b;
+}
+
+.abt-img span h2{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.abt-img span p{
+    font-size: 1.3rem;
+}
+
